@@ -72,7 +72,53 @@ const IPhoneMockup = () => {
         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white rounded-full"></div>
       </div>
       
-      {/* Floating Elements */}
+      {/* Floating Gutty Icons */}
+      {/* Top Left - Avocado */}
+      <div className="absolute -top-8 -left-12 w-16 h-16 animate-float opacity-80 hover:opacity-100 transition-opacity duration-300">
+        <img src="/Gutty Icons/avocado.png" alt="Avocado" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Top Right - Strawberry */}
+      <div className="absolute -top-6 -right-10 w-12 h-12 animate-float opacity-75 hover:opacity-100 transition-opacity duration-300" style={{ animationDelay: '1s' }}>
+        <img src="/Gutty Icons/strawberry.png" alt="Strawberry" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Middle Left - Carrot */}
+      <div className="absolute top-20 -left-16 w-14 h-14 animate-float opacity-70 hover:opacity-100 transition-opacity duration-300" style={{ animationDelay: '2s' }}>
+        <img src="/Gutty Icons/carrot.png" alt="Carrot" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Middle Right - Blueberries */}
+      <div className="absolute top-32 -right-14 w-10 h-10 animate-float opacity-85 hover:opacity-100 transition-opacity duration-300" style={{ animationDelay: '3s' }}>
+        <img src="/Gutty Icons/blueberries.png" alt="Blueberries" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Bottom Left - Salad */}
+      <div className="absolute bottom-20 -left-14 w-18 h-18 animate-float opacity-75 hover:opacity-100 transition-opacity duration-300" style={{ animationDelay: '4s' }}>
+        <img src="/Gutty Icons/salad.png" alt="Salad" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Bottom Right - Lemon */}
+      <div className="absolute bottom-16 -right-12 w-12 h-12 animate-float opacity-80 hover:opacity-100 transition-opacity duration-300" style={{ animationDelay: '5s' }}>
+        <img src="/Gutty Icons/lemon.png" alt="Lemon" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Far Left - Leaf */}
+      <div className="absolute top-40 -left-20 w-8 h-8 animate-float opacity-60 hover:opacity-100 transition-opacity duration-300" style={{ animationDelay: '6s' }}>
+        <img src="/Gutty Icons/leaf.png" alt="Leaf" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Far Right - Coconut */}
+      <div className="absolute top-60 -right-18 w-14 h-14 animate-float opacity-70 hover:opacity-100 transition-opacity duration-300" style={{ animationDelay: '7s' }}>
+        <img src="/Gutty Icons/coconut.png" alt="Coconut" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Bottom Center - Kefir */}
+      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 translate-x-8 w-10 h-10 animate-float opacity-75 hover:opacity-100 transition-opacity duration-300" style={{ animationDelay: '8s' }}>
+        <img src="/Gutty Icons/kefir.png" alt="Kefir" className="w-full h-full object-contain drop-shadow-lg" />
+      </div>
+      
+      {/* Original floating elements for subtle background effect */}
       <div className="absolute -top-4 -right-4 w-8 h-8 bg-health-300/30 rounded-full animate-float"></div>
       <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-health-400/25 rounded-full animate-float" style={{ animationDelay: '3s' }}></div>
     </div>
