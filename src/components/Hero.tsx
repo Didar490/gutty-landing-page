@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Activity, Target, Shield } from "lucide-react";
+import { Activity, Target, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import FeatureCard from "./FeatureCard";
 
