@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Heart, Activity, Target, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 import FeatureCard from "./FeatureCard";
-import IPhoneMockup from "./IPhoneMockup";
 
 const Hero = () => {
   const features = [
@@ -35,11 +34,6 @@ const Hero = () => {
           {/* Header Section */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="text-left animate-fade-in-up">
-              <Badge className="mb-6 bg-health-100 text-health-800 border-health-200 hover:bg-health-200 transition-colors">
-                <Heart className="w-4 h-4 mr-2" />
-                Trusted by 50,000+ Users
-              </Badge>
-              
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Transform Your
                 <span className="block bg-wellness-gradient bg-clip-text text-transparent">
@@ -52,7 +46,7 @@ const Hero = () => {
                 expert guidance, and science-backed recommendations tailored just for you.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
                   className="bg-wellness-gradient hover:opacity-90 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
@@ -67,26 +61,17 @@ const Hero = () => {
                   Learn More
                 </Button>
               </div>
-              
-              <div className="flex items-center gap-8 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-health-500 rounded-full"></div>
-                  <span>No subscription required</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-health-500 rounded-full"></div>
-                  <span>Privacy-first approach</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-health-500 rounded-full"></div>
-                  <span>Expert-validated content</span>
-                </div>
-              </div>
             </div>
 
-            {/* iPhone Mockup */}
+            {/* App Screenshot */}
             <div className="flex justify-center lg:justify-end">
-              <IPhoneMockup />
+              <div className="relative animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+                <img 
+                  src="/page1.png" 
+                  alt="Gutty App Screenshot" 
+                  className="w-80 h-auto rounded-2xl shadow-2xl"
+                />
+              </div>
             </div>
           </div>
 
@@ -103,25 +88,17 @@ const Hero = () => {
             ))}
           </div>
 
-          {/* Stats Section */}
-          <div className="mt-20 bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg animate-fade-in-up" style={{ animationDelay: '800ms' }}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-health-700 mb-2">50K+</div>
-                <div className="text-gray-600">Happy Users</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-health-700 mb-2">94%</div>
-                <div className="text-gray-600">Symptom Improvement</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-health-700 mb-2">4.8★</div>
-                <div className="text-gray-600">App Store Rating</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-health-700 mb-2">30+</div>
-                <div className="text-gray-600">Expert Partners</div>
-              </div>
+          {/* Footer */}
+          <div className="mt-16 text-center">
+            <div className="flex justify-center items-center gap-6 text-sm text-gray-600">
+              <Link 
+                to="/privacy" 
+                className="hover:text-health-700 transition-colors duration-200 underline"
+              >
+                Privacy Policy
+              </Link>
+              <span>•</span>
+              <span>© 2024 Gutty. All rights reserved.</span>
             </div>
           </div>
         </div>
