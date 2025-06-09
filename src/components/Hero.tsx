@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Activity, Target, Shield } from "lucide-react";
+import { Activity, Target, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import FeatureCard from "./FeatureCard";
 
@@ -16,9 +16,9 @@ const Hero = () => {
       description: "Get customized nutrition and lifestyle recommendations based on your unique digestive profile."
     },
     {
-      icon: Shield,
-      title: "Evidence-Based",
-      description: "All recommendations backed by the latest research in gastroenterology and nutritional science."
+      icon: BookOpen,
+      title: "Expert Sources",
+      description: "Access trusted medical organizations and research from WHO, Mayo Clinic, Harvard, and leading gastroenterology institutions."
     }
   ];
 
@@ -46,7 +46,7 @@ const Hero = () => {
                 expert guidance, and science-backed recommendations tailored just for you.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <Button 
                   size="lg" 
                   className="bg-wellness-gradient hover:opacity-90 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
@@ -60,6 +60,19 @@ const Hero = () => {
                 >
                   Learn More
                 </Button>
+              </div>
+
+              <div className="flex justify-center sm:justify-start">
+                <Link to="/sources">
+                  <Button 
+                    variant="ghost" 
+                    size="sm"
+                    className="text-health-600 hover:text-health-700 hover:bg-health-50 px-6 py-2 rounded-lg transition-all duration-300"
+                  >
+                    <BookOpen className="w-4 h-4 mr-2" />
+                    View Expert Sources
+                  </Button>
+                </Link>
               </div>
             </div>
 

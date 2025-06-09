@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Hero from "./components/Hero";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import HealthSources from "./components/HealthSources";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/sources" element={<HealthSources />} />
       </Routes>
     </Router>
   );
