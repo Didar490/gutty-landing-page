@@ -18,7 +18,15 @@ const Hero = () => {
     {
       icon: BookOpen,
       title: "Expert Sources",
-      description: "Access trusted medical organizations and research from WHO, Mayo Clinic, Harvard, and leading gastroenterology institutions."
+      description: (
+        <>
+          Information provided is for educational purposes only.{" "}
+          <Link to="/sources" className="text-health-600 hover:text-health-700 underline">
+            View our sources
+          </Link>{" "}
+          for reference materials and research.
+        </>
+      )
     }
   ];
 

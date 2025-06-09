@@ -1,9 +1,10 @@
 import { LucideIcon } from 'lucide-react';
+import { ReactNode } from 'react';
 
 interface FeatureCardProps {
   icon: LucideIcon;
   title: string;
-  description: string;
+  description: string | ReactNode;
   delay?: number;
 }
 
@@ -17,7 +18,7 @@ const FeatureCard = ({ icon: Icon, title, description, delay = 0 }: FeatureCardP
         <Icon className="w-6 h-6 text-health-600" />
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-600 leading-relaxed">{description}</p>
+      <div className="text-gray-600 leading-relaxed">{description}</div>
     </div>
   );
 };
