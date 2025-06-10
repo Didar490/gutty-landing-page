@@ -119,6 +119,13 @@ const Hero = () => {
                 Privacy Policy
               </Link>
               <span>•</span>
+              <Link 
+                to="/terms" 
+                className="hover:text-health-700 transition-colors duration-200 underline"
+              >
+                Terms of Use
+              </Link>
+              <span>•</span>
               <span>© 2024 Gutty. All rights reserved.</span>
             </div>
           </div>
